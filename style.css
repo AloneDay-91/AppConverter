@@ -1,0 +1,105 @@
+/* style.css */
+
+/* Styles globaux */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Couleur de fond */
+    color: #333; /* Couleur du texte */
+}
+
+/* Styles pour les en-têtes */
+h1 {
+    text-align: center; /* Centrer le texte */
+    color: #555; /* Couleur du texte */
+    margin-top: 20px; /* Marge supérieure */
+}
+
+/* Styles pour les boutons */
+button {
+    background-color: #4CAF50; /* Vert */
+    color: white; /* Couleur du texte */
+    padding: 10px 20px; /* Rembourrage */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur en forme de main */
+    margin: 10px; /* Marge autour du bouton */
+}
+
+button:hover {
+    background-color: #45a049; /* Couleur au survol */
+}
+
+/* Styles pour le texte */
+p {
+    font-size: 14px; /* Taille de police */
+    padding: 10px; /* Rembourrage interne */
+    margin: 5px 0; /* Marges */
+}
+
+/* Styles pour les sélections */
+select {
+    padding: 10px; /* Rembourrage */
+    border-radius: 5px; /* Coins arrondis */
+    margin: 10px; /* Marge */
+    font-size: 14px; /* Taille de police */
+}
+
+/* Styles pour le conteneur */
+.container {
+    display: flex;
+    flex-direction: column; /* Disposition verticale */
+    align-items: center; /* Centrer les éléments */
+    justify-content: center; /* Centrer verticalement */
+    height: 100vh; /* Prendre toute la hauteur */
+    text-align: center; /* Centrer le texte */
+}
+
+/* Fenêtre modale */
+.modal {
+    display: none; /* Masqué par défaut */
+    position: fixed; /* Position fixe */
+    top: 0;
+    left: 0;
+    width: 100%; /* Prend toute la largeur */
+    height: 100%; /* Prend toute la hauteur */
+    background-color: rgba(0, 0, 0, 0.5); /* Couleur de fond avec opacité */
+    display: flex; /* Disposition flexible */
+    align-items: center; /* Centrer verticalement */
+    justify-content: center; /* Centrer horizontalement */
+}
+
+/* Contenu de la modale */
+.modal-content {
+    background-color: white; /* Fond blanc */
+    padding: 20px; /* Rembourrage */
+    border-radius: 10px; /* Coins arrondis */
+    text-align: center; /* Centrer le texte */
+}
+
+/* Bouton d'ouverture de dossier */
+#open-folder {
+    margin-top: 10px; /* Marge supérieure */
+    background-color: #4CAF50; /* Couleur du bouton */
+    color: white; /* Couleur du texte */
+    padding: 10px 20px; /* Rembourrage */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur au survol */
+}
+
+#open-folder:hover {
+    background-color: #45a049; /* Couleur au survol */
+}
+
+/* Barre de chargement */
+#progress-bar {
+    width: 80%; /* La barre occupe 80% de la largeur du conteneur */
+    height: 20px; /* Hauteur de la barre */
+    background-color: #f3f3f3; /* Couleur de fond de la barre */
+    border: 1px solid #ccc; /* Bordure */
+    border-radius: 5px; /* Coins arrondis */
+    margin: 20px 0; /* Marge autour de la barre */
+    display: block; /* Assurer que la barre est visible lorsqu'affichée */
+}

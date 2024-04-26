@@ -1,0 +1,39 @@
+{
+  "author": "Elouan Bruzek",
+  "description": "A simple image converter made with Electron",
+  "license": "MIT",
+  "name": "image-converter",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "productName": "Image Converter",
+    "appId": "com.example.imageconverter",
+    "copyright": "Copyright © 2024 Elouan Bruzek",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "index.html",
+      "renderer.js",
+      "style.css"
+    ],
+    "mac": {
+      "target": "dmg"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  },
+  "devDependencies": {
+    "electron": "^25.0.0",
+    "electron-builder": "^24.0.0"
+  }
+}

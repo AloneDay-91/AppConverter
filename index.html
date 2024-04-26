@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Convertisseur d'Images en Lots</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Lien vers le fichier CSS -->
+</head>
+<body>
+<div class="container"> <!-- Conteneur principal -->
+    <h1>Convertisseur d'Images en Lots</h1>
+    <button id="select-input-folder">Sélectionner le Dossier Source</button>
+    <p id="selected-input-folder">Aucun dossier source sélectionné</p>
+    <button id="select-folder">Sélectionner le Dossier de Sortie</button>
+    <p id="selected-folder">Aucun dossier de sortie sélectionné</p>
+    <select id="format">
+        <option value="jpeg">JPEG</option>
+        <option value="png">PNG</option>
+        <option value="webp">WEBP</option>
+    </select>
+    <button id="convert" style="display: none;">Convertir</button>
+    <p id="status"></p>
+
+    <!-- Fenêtre modale -->
+    <div id="modal" class="modal" style="display: none;"> <!-- Masqué par défaut -->
+        <div class="modal-content"> <!-- Contenu de la modale -->
+            <p id="modal-message">Conversion en cours...</p> <!-- Message modifiable -->
+            <!-- Barre de chargement pour la progression -->
+            <progress id="progress-bar" value="0" max="100" style="display: none;"></progress>
+            <button id="open-folder" style="display: none;">Ouvrir le Dossier</button> <!-- Bouton d'ouverture de dossier -->
+            <button id="close-modal">Fermer</button> <!-- Bouton de fermeture de la modale -->
+        </div>
+    </div>
+</div>
+
+<script src="renderer.js"></script>
+</body>
